@@ -1,0 +1,17 @@
+﻿<Page x:Class="Windows_Malware_Effects_Remediation_Tool.LoadingPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Windows_Malware_Effects_Remediation_Tool"
+      mc:Ignorable="d"
+      xmlns:ui="http://schemas.inkore.net/lib/ui/wpf/modern"
+      d:DesignHeight="390" d:DesignWidth="590"
+      Title="LoadingPage" MinHeight="450" MinWidth="650" Background="{DynamicResource SolidBackgroundFillColorBaseBrush}">
+
+    <Grid>
+        <Label x:Name="searchingText" Content="Searching for processes" Margin="25,17,0,0" FontSize="20" Foreground="{StaticResource SystemControlBackgroundBaseHighBrush}"/>
+        <ui:ProgressRing IsActive="True" Height="60" Width="60" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,70"/>
+        <Label x:Name="progressText" Content="Processing" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,60,0,0" FontSize="16"/>
+    </Grid>
+</Page>
